@@ -20,7 +20,7 @@ export const passwordRules = (isRequired = true) => {
   }
 
   if (isRequired) {
-    rules.required = "Password is required"
+    rules.required = "Contraseña es requerida"
   }
 
   return rules

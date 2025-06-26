@@ -61,11 +61,11 @@ function UsersTable() {
       <Table.Root size={{ base: "sm", md: "md" }}>
         <Table.Header>
           <Table.Row>
-            <Table.ColumnHeader w="sm">Full name</Table.ColumnHeader>
-            <Table.ColumnHeader w="sm">Email</Table.ColumnHeader>
-            <Table.ColumnHeader w="sm">Role</Table.ColumnHeader>
-            <Table.ColumnHeader w="sm">Status</Table.ColumnHeader>
-            <Table.ColumnHeader w="sm">Actions</Table.ColumnHeader>
+            <Table.ColumnHeader w="sm">Nombre completo</Table.ColumnHeader>
+            <Table.ColumnHeader w="sm">Correo</Table.ColumnHeader>
+            <Table.ColumnHeader w="sm">Rol</Table.ColumnHeader>
+            <Table.ColumnHeader w="sm">Activo</Table.ColumnHeader>
+            <Table.ColumnHeader w="sm">Acciones</Table.ColumnHeader>
           </Table.Row>
         </Table.Header>
         <Table.Body>
@@ -117,7 +117,7 @@ function Admin() {
   return (
     <Container maxW="full">
       <Heading size="lg" pt={12}>
-        Users Management
+        Administrador de usuario
       </Heading>
 
       <AddUser />

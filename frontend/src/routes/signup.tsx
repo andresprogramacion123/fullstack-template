@@ -14,7 +14,7 @@ import { InputGroup } from "@/components/ui/input-group"
 import { PasswordInput } from "@/components/ui/password-input"
 import useAuth, { isLoggedIn } from "@/hooks/useAuth"
 import { confirmPasswordRules, emailPattern, passwordRules } from "@/utils"
-import Logo from "/assets/images/fastapi-logo.svg"
+import Logo from "/assets/images/Logo-Instruimos-2018_Verde.svg"
 
 export const Route = createFileRoute("/signup")({
   component: SignUp,
@@ -83,9 +83,9 @@ function SignUp() {
                 id="full_name"
                 minLength={3}
                 {...register("full_name", {
-                  required: "Full Name is required",
+                  required: "Nombre completo es requerido",
                 })}
-                placeholder="Full Name"
+                placeholder="Nombre Completo"
                 type="text"
               />
             </InputGroup>
@@ -96,10 +96,10 @@ function SignUp() {
               <Input
                 id="email"
                 {...register("email", {
-                  required: "Email is required",
+                  required: "Correo electronico es requerido",
                   pattern: emailPattern,
                 })}
-                placeholder="Email"
+                placeholder="Correo electronico"
                 type="email"
               />
             </InputGroup>
@@ -108,23 +108,23 @@ function SignUp() {
             type="password"
             startElement={<FiLock />}
             {...register("password", passwordRules())}
-            placeholder="Password"
+            placeholder="Contraseña"
             errors={errors}
           />
           <PasswordInput
             type="confirm_password"
             startElement={<FiLock />}
             {...register("confirm_password", confirmPasswordRules(getValues))}
-            placeholder="Confirm Password"
+            placeholder="Confirmar contraseña"
             errors={errors}
           />
           <Button variant="solid" type="submit" loading={isSubmitting}>
-            Sign Up
+            Registrarse
           </Button>
           <Text>
-            Already have an account?{" "}
+            Ya tienes una cuenta?{" "}
             <RouterLink to="/login" className="main-link">
-              Log In
+              Acceder
             </RouterLink>
           </Text>
         </Container>

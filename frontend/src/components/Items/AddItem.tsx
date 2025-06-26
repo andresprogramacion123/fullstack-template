@@ -75,13 +75,13 @@ const AddItem = () => {
       <DialogTrigger asChild>
         <Button value="add-item" my={4}>
           <FaPlus fontSize="16px" />
-          Add Item
+          Añadir item
         </Button>
       </DialogTrigger>
       <DialogContent>
         <form onSubmit={handleSubmit(onSubmit)}>
           <DialogHeader>
-            <DialogTitle>Add Item</DialogTitle>
+            <DialogTitle>Añadir item</DialogTitle>
           </DialogHeader>
           <DialogBody>
             <Text mb={4}>Fill in the details to add a new item.</Text>
